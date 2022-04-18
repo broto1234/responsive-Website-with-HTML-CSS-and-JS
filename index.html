@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website with JS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main--container">
+    <header>
+      <div class="navContainer">
+        <a href="#home" class="navLogo" id="navLogo">BROTO</a>
+        <div class="navToggleBars">
+          <div class="fas fa-bars"></div>
+        </div>
+        <div class="navToggleClose">
+          <div class="fa fa-close"></div>
+        </div>
+        <ul class="navMenu">
+          <li class="navItem">
+            <a href="#home" class="navLinks" id="homePage">Home</a>
+          </li>
+          <li class="navItem">
+            <a href="#about" class="navLinks" id="aboutPage">About</a>
+          </li>
+          <li class="navItem">
+            <a href="#collections" class="navLinks" id="collectionsPage">Collections</a>
+          </li>
+          <li class="navItem">
+            <a href="#contact" class="navLinks" id="contactPage">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  
+    <section class="home" id="home">
+      <div class="home--content">
+        <h3>fresh flower fresh mind</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, recusandae.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </section>
+  
+    <section class="about" id="about">
+      <p class="aboutHeading">About Us</p>
+      <div class="about--container">
+        <div class="about--image">
+          <img src="./picture/about.jpg" alt="about">
+        </div>
+        <div class="about--content">
+          <h3>What's special here?</h3>
+          <h1>We deliver fresh flower from our own garden.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius omnis aliquid enim nihil voluptas aperiam!</p>
+          <a href="#" class="btn">VISIT US</a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="collections">
+      <p class="our--collection">Our Collections</p>
+      <div class="collections">
+        <div class="collection--container">
+          <div class="collection--content today--part">
+            <p class="collection--heading">Today's Collections </p><div class="box"></div>
+            <ul class="collection--list">
+              <li><img src="./picture/today1.png" alt="" onclick="imgDisplay('./picture/today1.png')"></li>
+              <li><img src="./picture/today2.png" alt="" onclick="imgDisplay('./picture/today2.png')"></li>
+              <li><img src="./picture/today3.png" alt="" onclick="imgDisplay('./picture/today3.png')"></li>
+              <li><img src="./picture/today4.png" alt="" onclick="imgDisplay('./picture/today4.png')"></li>
+              <li><img src="./picture/today5.png" alt="" onclick="imgDisplay('./picture/today5.png')"></li>
+            </ul>
+          </div>
+          <div class="collection--content yesterday--part">
+            <p class="collection--heading">Yesterday's Collections</p><div class="box"></div>
+            <ul class="collection--list">
+              <li><img src="./picture/yester1.png" alt="" onclick="imgDisplayYester('./picture/yester1.png')"></li>
+              <li><img src="./picture/yester2.png" alt="" onclick="imgDisplayYester('./picture/yester2.png')"></li>
+              <li><img src="./picture/yester3.png" alt="" onclick="imgDisplayYester('./picture/yester3.png')"></li>
+              <li><img src="./picture/yester4.png" alt="" onclick="imgDisplayYester('./picture/yester4.png')"></li>
+              <li><img src="./picture/yester5.png" alt="" onclick="imgDisplayYester('./picture/yester5.png')"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="collection--price">
+          <div class="price--collection todayprice--part">
+            <img src="./picture/today1.png" alt="pic" class="displayImg" id="displaytodayPic">
+            <div class="price displayPicToday" id="today--price">
+              <h3>$79.00</h3>
+              <p>BUY NOW</p>
+            </div>          
+          </div>
+          <div class="price--collection yesterprice---part">
+            <img src="./picture/yester1.png" alt="pic" class="displayImg" id="displayyesterPic">
+            <div class="price displayPicYester" id="yesterday--price">
+              <h3>$49<span class="textDeco">$79</span></h3>
+              <p>BUY NOW</p>
+            </div>
+          </div>        
+        </div>
+      </div>      
+    </section>
+    <footer class="contact" id="contact">
+      <div class="footerLogo">
+        <a href="#home" class="navLogo" id="navLogo">BROTO</a>
+      </div>
+      <div class="footer--container">
+        <div class="footer--content">
+          <h3>Help</h3>
+          <div class="footer--inf">
+            <a href="#">Customer Service</a>
+            <a href="#">Flower Guides</a>
+            <a href="#">Plant Guides</a>
+          </div>
+        </div>
+        <div class="footer--content">
+          <h3>Account</h3>
+          <div class="footer--inf">
+            <a href="#">Payment History</a>
+            <a href="#">Your Account</a>
+            <a href="#">Track Your Order</a>
+          </div>
+        </div>
+        <div class="footer--contact">
+          <h3>Contact</h3>
+          <p class="allTime">We are here 24 hours a day</p>
+          <div class="icon--inf">
+            <a href="/" class="footer--Icon"><i class="fab fa-facebook"></i></a>
+            <a href="/" class="footer--Icon"><i class="fab fa-twitter"></i></a>
+            <a href="/" class="footer--Icon"><i class="fab fa-youtube"></i></a>
+            <a href="/" class="footer--Icon"><i class="fab fa-instagram"></i></a>
+            <a href="/" class="footer--Icon"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>          
+      <div class="footerCopyright">
+        <p class="website--right">&copy; BROTO 2022. All rights reserved</p>
+      </div>
+    </footer>  
+  </div>
+  <script src="script.js"></script>  
+</body>
+</html>
