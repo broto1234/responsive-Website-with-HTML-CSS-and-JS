@@ -1,7 +1,7 @@
 # responsive-Website-with-HTML-CSS-and-JS
 
 
-Click to visit the site (https://broto1234.github.io/responsive-Website-with-HTML-CSS-and-JS/#home)
+Click to visit the site (https://broto1234.github.io/responsive-Website-with-HTML-CSS-and-JS/)
 
 
 
